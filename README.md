@@ -1,0 +1,1 @@
+A Python app to run spotify in terminal.
