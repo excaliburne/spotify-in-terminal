@@ -17,6 +17,7 @@ def _authorization_code(conf):
     current_dir = os.path.abspath(os.curdir) 
     file_path = os.path.join(current_dir, '.pytify')
     auth_key = get_auth_key(conf.client_id, conf.client_secret)
+    
     try:
         with open(file_path, mode='r', encoding='UTF-8') as file:
             refresh_token = file.readline() 
